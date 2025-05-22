@@ -1,6 +1,6 @@
 # Gemini Multimodal Learning Tutor 📚🧠
 
-Gemini Multimodal Learning Tutor is an advanced educational AI assistant powered by Google's Gemini 2.5 Pro Experimental. It provides personalized, interactive, and multimodal learning experiences tailored to various education levels.
+Gemini Multimodal Learning Tutor is an advanced educational AI assistant powered by Google's Gemini 2.5 Flash. It provides personalized, interactive, and multimodal learning experiences tailored to various education levels.
 
 ---
 
@@ -42,7 +42,7 @@ Gemini Multimodal Learning Tutor is an advanced educational AI assistant powered
 
 ## 🛠️ Tech Stack
 
-- 🤖 **Gemini 2.5 Pro Experimental** (March 2025) from Google
+- 🤖 **Gemini 2.5 Flash** from Google
 - 🚀 **Agno Framework** for AI agents
 - 💫 **Streamlit** for interactive UI
 - 🔍 **Multiple Search Engines** (Google, DuckDuckGo, Exa)
@@ -93,7 +93,7 @@ streamlit run cookbook/examples/apps/gemini-tutor/app.py
 
 ### Audio Analysis
 
-- **Lecture Understanding**: Extract key concepts from educational audio
+- **Lecture Understanding**: Extract key czoncepts from educational audio
 - **Speech Comprehension**: Process spoken explanations and instructions
 - **Language Learning**: Analyze pronunciation and language patterns
 - **Music Education**: Interpret musical concepts and theory

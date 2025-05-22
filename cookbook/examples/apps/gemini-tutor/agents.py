@@ -1,5 +1,5 @@
 """
-Gemini Tutor: Advanced Educational AI Assistant powered by Gemini 2.5
+Gemini Tutor: Advanced Educational AI Assistant powered by Gemini 2.5 Flash
 """
 
 import json
@@ -29,7 +29,7 @@ class TutorAppAgent:
     """
 
     def __init__(
-        self, model_id="gemini-2.5-pro-exp-03-25", education_level="High School"
+        self, model_id="gemini-2.5-flash", education_level="High School"
     ):
         """
         Initialize the TutorAppAgent.

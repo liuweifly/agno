@@ -28,7 +28,7 @@ GeminiModel =Gemini(
 
 youtube_agent = Agent(
     name="YouTube Agent",
-    model=Gemini(id="gemini-2.0-flash"),
+    model=Gemini(id="gemini-2.5-pro-exp-03-25"),
     tools=[YouTubeTools()],
     show_tool_calls=True,
     instructions=("""

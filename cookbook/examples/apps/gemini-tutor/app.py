@@ -15,7 +15,7 @@ nest_asyncio.apply()
 
 # Page configuration
 st.set_page_config(
-    page_title="Gemini Multimodal Tutor",
+    page_title="Gemini 2.5 Flash Multimodal Tutor",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -23,10 +23,7 @@ st.set_page_config(
 
 # --- Constants ---
 MODEL_OPTIONS = {
-    "Gemini 2.5 Pro Experimental (Recommended)": "gemini-2.5-pro-exp-03-25",
-    "Gemini 2.0 Pro": "gemini-2.0-pro",
-    "Gemini 2.0 Pro": "gemini-2.0-pro",
-    "Gemini 1.5 Pro": "gemini-1.5-pro",
+    "Gemini 2.5 Flash": "gemini-2.5-flash",
 }
 
 EDUCATION_LEVELS = [
@@ -43,9 +40,7 @@ def initialize_session_state():
     if "tutor_agent" not in st.session_state:
         st.session_state.tutor_agent = None
     if "model_id" not in st.session_state:
-        st.session_state.model_id = MODEL_OPTIONS[
-            "Gemini 2.5 Pro Experimental (Recommended)"
-        ]
+        st.session_state.model_id = MODEL_OPTIONS["Gemini 2.5 Flash"]
     if "education_level" not in st.session_state:
         st.session_state.education_level = "High School"
     if "messages" not in st.session_state:
@@ -68,9 +63,7 @@ def render_sidebar():
         selected_model_name = st.selectbox(
             "Select Gemini Model",
             options=list(MODEL_OPTIONS.keys()),
-            index=list(MODEL_OPTIONS.values()).index(
-                st.session_state.model_id
-            ),  # Maintain selection
+            index=0,  # Always select the first (and only) option
             key="selected_model_name",
         )
         st.session_state.model_id = MODEL_OPTIONS[selected_model_name]
